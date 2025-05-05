@@ -81,8 +81,5 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
          - Individual graphs: Separate graphs show each sensor's values individually for more detailed analysis.
          - Combined graph: A graph displaying all three sensor readings together for easy comparison
          - Pump activation: Displays pump activation events in chronological order, showing when the pump was triggered.
-
-**MTIG Stack Setup Based On:**  
-The setup is based on the [docker-compose-mosquitto-influxdb-telegraf-grafana](https://github.com/Miceuz/docker-compose-mosquitto-influxdb-telegraf-grafana) by [Miceuz](https://github.com/Miceuz) and [AkaJuliaan](https://github.com/akaJuliaan)
-
----
+           
+   ---
