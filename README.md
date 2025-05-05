@@ -64,13 +64,19 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
         - `testing/airhumidity` – Delivers air humidity data collected from the DHT11 sensor.
         - `testing/airtemperature` – Sends air temperature readings from the DHT11 sensor.
         - `testing/pumpstatus` – Reports the pump activation when the pump is triggered to water the plant, based on the soil moisture level falling below a predefined threshold.
+          
   - **Telegraf** (Data collector)
        - Listens for messages from the MQTT broker on the defined topics.
        - Consumes the JSON-formatted messages published by the ESP32 (via MQTT), parsing them into a format suitable for processing and storage in InfluxDB.
   - **InfluxDB** (Time-series database)
        - Receives the data from Telegraf, storing the sensor readings and pump activation logs in the bucket.
   - **Grafana** (Visualization platform)
-       - 
+       - Uses queries to create interactive dashboards that visualize both real-time and historical sensor data, as well as pump activation logs.
+       - In individual and combined graph data is aggregated over 10-minute intervals using the mean function, which averages the last 5 data points (published every 2 minutes) to provide more stable values.
+         - Gauges: Three real-time gauges display the current sensor readings for humidity, air temperature, and soil moisture.
+         - Individual graphs: Separate graphs show each sensor's values individually for more detailed analysis.
+         - Combined graph: A graph displaying all three sensor readings together for easy comparison
+         - Pump activation time: A panel that shows the most recent pump activation events in chronological order.
 
 **MTIG Stack Setup Based On:**  
 [docker-compose-mosquitto-influxdb-telegraf-grafana](https://github.com/Miceuz/docker-compose-mosquitto-influxdb-telegraf-grafana) by [Miceuz](https://github.com/Miceuz) and [AkaJuliaan](https://github.com/akaJuliaan)
