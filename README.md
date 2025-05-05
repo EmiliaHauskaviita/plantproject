@@ -58,9 +58,19 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
 
 - **Services Running in Docker (MTIG Stack):**
   - **Mosquitto** (MQTT Broker)
+     - Mosquitto acts as the MQTT broker, enabling communication from the Arduino Uno R4 WiFi (with ESP32) to the VM and other services.
+     - The MQTT topics for the sensor measurements are as follows:
+        - `testing/soilmoisture` –  Provides readings from the soil moisture sensor.
+        - `testing/airhumidity` – Delivers air humidity data collected from the DHT11 sensor.
+        - `testing/airtemperature` – Sends air temperature readings from the DHT11 sensor.
+        - `testing/pumpstatus` – Reports the pump activation when the pump is triggered to water the plant, based on the soil moisture level falling below a predefined threshold.
   - **Telegraf** (Data collector)
+       - Listens for messages from the MQTT broker on the defined topics.
+       - Consumes the JSON-formatted messages published by the ESP32 (via MQTT), parsing them into a format suitable for processing and storage in InfluxDB.
   - **InfluxDB** (Time-series database)
+       - Receives the data from Telegraf, storing the sensor readings and pump activation logs in the bucket.
   - **Grafana** (Visualization platform)
+       - 
 
 **MTIG Stack Setup Based On:**  
 [docker-compose-mosquitto-influxdb-telegraf-grafana](https://github.com/Miceuz/docker-compose-mosquitto-influxdb-telegraf-grafana) by [Miceuz](https://github.com/Miceuz) and [AkaJuliaan](https://github.com/akaJuliaan)
