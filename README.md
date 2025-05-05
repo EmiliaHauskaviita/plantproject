@@ -55,6 +55,7 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
 
 - **Service Running Directly on VM:**
   - **Nginx** (Reverse proxy with HTTPS)
+       - Nginx acts as a reverse proxy, securely routing traffic to the Grafana instance running in Docker and ensuring encrypted access via HTTPS at https://jeid.live.
 
 - **Services Running in Docker (MTIG Stack):**
   - **Mosquitto** (MQTT Broker)
