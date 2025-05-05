@@ -58,6 +58,9 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
        - Nginx acts as a reverse proxy, securely routing traffic to the Grafana instance running in Docker and ensuring encrypted access via HTTPS at https://jeid.live.
 
 - **Services Running in Docker (MTIG Stack):**
+  
+  The setup is based on the [docker-compose-mosquitto-influxdb-telegraf-grafana](https://github.com/Miceuz/docker-compose-mosquitto-influxdb-telegraf-grafana) by [Miceuz](https://github.com/Miceuz) and [AkaJuliaan](https://github.com/akaJuliaan).
+
   - **Mosquitto** (MQTT Broker)
      - Mosquitto acts as the MQTT broker, enabling communication from the Arduino Uno R4 WiFi (with ESP32) to the VM and other services.
      - The following MQTT topics handle the sensor data:
@@ -80,6 +83,6 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
          - Pump activation: Displays pump activation events in chronological order, showing when the pump was triggered.
 
 **MTIG Stack Setup Based On:**  
-[docker-compose-mosquitto-influxdb-telegraf-grafana](https://github.com/Miceuz/docker-compose-mosquitto-influxdb-telegraf-grafana) by [Miceuz](https://github.com/Miceuz) and [AkaJuliaan](https://github.com/akaJuliaan)
+The setup is based on the [docker-compose-mosquitto-influxdb-telegraf-grafana](https://github.com/Miceuz/docker-compose-mosquitto-influxdb-telegraf-grafana) by [Miceuz](https://github.com/Miceuz) and [AkaJuliaan](https://github.com/akaJuliaan)
 
 ---
