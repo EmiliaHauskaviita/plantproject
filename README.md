@@ -59,24 +59,24 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
 - **Services Running in Docker (MTIG Stack):**
   - **Mosquitto** (MQTT Broker)
      - Mosquitto acts as the MQTT broker, enabling communication from the Arduino Uno R4 WiFi (with ESP32) to the VM and other services.
-     - The MQTT topics for the sensor measurements are as follows:
-        - `testing/soilmoisture` –  Provides readings from the soil moisture sensor.
-        - `testing/airhumidity` – Delivers air humidity data collected from the DHT11 sensor.
+     - The following MQTT topics handle the sensor data:
+        - `testing/soilmoisture` –  Provides soil moisture sensor readings.
+        - `testing/airhumidity` – Delivers air humidity data from the DHT11 sensor.
         - `testing/airtemperature` – Sends air temperature readings from the DHT11 sensor.
-        - `testing/pumpstatus` – Reports the pump activation when the pump is triggered to water the plant, based on the soil moisture level falling below a predefined threshold.
+        - `testing/pumpstatus` – Reports pump activation when the system triggers the pump to water the plant (based on soil moisture falling below a predefined threshold).
           
   - **Telegraf** (Data collector)
-       - Listens for messages from the MQTT broker on the defined topics.
-       - Consumes the JSON-formatted messages published by the ESP32 (via MQTT), parsing them into a format suitable for processing and storage in InfluxDB.
+       - Subscribes to the MQTT topics to listen for incoming messages.
+       - Parses the JSON-formatted messages from the ESP32 (via MQTT) and transforms them into a format suitable for processing and storage in InfluxDB.
   - **InfluxDB** (Time-series database)
-       - Receives the data from Telegraf, storing the sensor readings and pump activation logs in the bucket.
+       - Receives the parsed data from Telegraf and stores sensor readings and pump activation logs in a time-series database bucket.
   - **Grafana** (Visualization platform)
-       - Uses queries to create interactive dashboards that visualize both real-time and historical sensor data, as well as pump activation logs.
-       - In individual and combined graph data is aggregated over 10-minute intervals using the mean function, which averages the last 5 data points (published every 2 minutes) to provide more stable values.
-         - Gauges: Three real-time gauges display the current sensor readings for humidity, air temperature, and soil moisture.
+       - Queries the data to create interactive dashboards, visualizing both real-time and historical sensor data and pump activation logs.
+       - In individual and combined graph, data is aggregated over 10-minute intervals using the mean function, which averages the last 5 data points (published every 2 minutes) to provide more stable values.
+         - Gauges: Three real-time gauges display the current readings for air humidity, air temperature, and soil moisture.
          - Individual graphs: Separate graphs show each sensor's values individually for more detailed analysis.
          - Combined graph: A graph displaying all three sensor readings together for easy comparison
-         - Pump activation time: A panel that shows the most recent pump activation events in chronological order.
+         - Pump activation: Displays pump activation events in chronological order, showing when the pump was triggered.
 
 **MTIG Stack Setup Based On:**  
 [docker-compose-mosquitto-influxdb-telegraf-grafana](https://github.com/Miceuz/docker-compose-mosquitto-influxdb-telegraf-grafana) by [Miceuz](https://github.com/Miceuz) and [AkaJuliaan](https://github.com/akaJuliaan)
