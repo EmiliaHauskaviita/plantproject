@@ -18,16 +18,61 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
 
 ## Wiring 
 
+Arduino to breadboard:
+
+- Arduino VCC 5,5V - breadboard red lane
+  
+- Arduino GND - breadboard blue lane
+  
+
  **Water Pump:**
 
-   
+ - The pump’s negative terminal is connected to the power supply’s negative terminal.
+ 
+ - The power supply’s positive terminal is connected to the relay’s COM (common) terminal.
+ 
+ - The pump’s positive terminal is connected to the relay’s NO (normally open) terminal.
+
+
   **Soil Moisture Sensor:**
+  
+  - Sensor GND pin - Arduino GND
+    
+  - Sensor VCC pin - Arduino 3,3V VCC
+    
+  - Sensor OUT pin - Arduino Analog in A0
 
    
 **DHT11 Sensor:**
 
+- The DHT11 sensor is connected to the breadboard at positions I11–I14.
+
+- Breadboard I11 is VCC (power supply).
+
+- Breadboard I12 is OUT (data output).
+
+- Breadboard I13 is NC (not connected).
+
+- Breadboard I14 is GND (ground).
+
+- Breadboard H12 (data output) is connected to Arduino’s digital pin 2.
+
+- Breadboard F14 is linked to the breadboard’s blue lane, which serves as GND (ground).
+
+- VCC (5.5V) is supplied through the breadboard and connects to breadboard position B12.
+
+- Breadboard C12 (data output) is connected to breadboard F11 (power supply).
+
+- Breadboard D12 is connected to F12 with resistor. This resistor is used to limit current flow and adjust voltage levels in a circuit. 
+
 
 **Relay Module:**
+
+- Realy VCC - breadboard red lane (VCC).
+
+- Realy GND - breadboard blue lane (GND).
+
+- Relay IN - Arduino Digital 3.
   
 
   ---
