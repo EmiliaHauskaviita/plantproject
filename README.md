@@ -38,7 +38,7 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
   
 - Sensor GND to Arduino GND (Ground).
   
-- Sensor OUT to Arduino Analog in A0 (The sensor responds through OUT pin, delivering the measured values).
+- Sensor OUT to Arduino ANALOG IN Pin A0 (The sensor responds through OUT pin, delivering the measured values).
    
 **DHT11 Sensor:**
 
@@ -68,7 +68,7 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
   
 - Relay GND to Breadboard GND rail.
   
-- Relay IN to Arduino Digital 3.
+- Relay IN to Arduino Digital Pin 3.
 
   ---
 
