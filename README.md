@@ -48,7 +48,7 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
      
    - I12 = OUT (Deliveres the measured values).
      
-   - I13 = NC (Not Connected).
+   - I13 = NC (Not Connected, we don't need this pin).
      
    - I14 = GND (Ground).
      
