@@ -54,13 +54,13 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
      
 - Breadboard B12(VCC) is connected to the breadboard section where VCC from the Arduino is connected.
   
-- Breadboard C12 is connected to f11 (VCC).
+- Breadboard C12 (OUT) is connected to f11 (VCC). Note! This is correct only if a pull-up resistor is used for the OUT signal.
   
 - Breadboard H12 (OUT) is directly connected to Arduino Digital Pin 2.
   
 - Breadboard F14 (GND) is connected to the breadboard’s GND rail, which is also connected to GND from the Arduino.
   
-- Between d12 (OUT)and f12 (OUT) there is a resistor. the resistor is helping stabilize the communication between your Arduino and the DHT11 sensor by pulling the data line to a reliable voltage level.
+- Between D12 (OUT)and F12 (OUT) there is a resistor. The resistor is helping stabilize the communication between Arduino and the DHT11 sensor by pulling the data line to a reliable voltage level.
 
 **Relay Module:**
 
