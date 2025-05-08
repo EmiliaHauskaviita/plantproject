@@ -10,13 +10,16 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
 
 ## Physical Parts
 
-- **Plastic PVC Hose (5 mm):** [Puuilo product link](https://www.puuilo.fi/muoviletku-kirkas-5mm#tab-label-description)
-- **Water Pump (3–24V DC):** [Partco product link](https://www.partco.fi/fi/saehkoemekaniikka/moottorit/dc-moottorit/23144-mot-pmma19004a001.html)
+- **Plastic PVC hose (5 mm):** [Puuilo product link](https://www.puuilo.fi/muoviletku-kirkas-5mm#tab-label-description)
+- **Water pump (3–24V DC):** [Partco product link](https://www.partco.fi/fi/saehkoemekaniikka/moottorit/dc-moottorit/23144-mot-pmma19004a001.html)
+- **USB-C charging cable:** [Partco product link](https://www.partco.fi/fi/raspberry-pi/sbc-tarvikkeet/26632-rpi5-pwrw.html)
 - **Arduino Uno R4 WiFi (ABX00087):** [Partco product link](https://www.partco.fi/fi/arduino/arduino-classic/26323-arduino-uno-r4w.html)
-- **Arduino Starter Kit (Basic):** [Partco product link](https://www.partco.fi/fi/arduino/arduino-aloitussarjat/21389-ard-aak39525k.html)  
-  *(Includes breadboard, 5V relay module, DHT11 sensor, soil moisture sensor, and jumper wires)*
+- **Arduino starter kit (Basic):** [Partco product link](https://www.partco.fi/fi/arduino/arduino-aloitussarjat/21389-ard-aak39525k.html)  
+  *(Includes breadboard, 5V relay module, DHT11 sensor, soil moisture sensor, resistor and jumper wires)*
 
 ## Wiring 
+The wiring is based on [Arduino soil moisture sensor](https://arduinogetstarted.com/tutorials/arduino-soil-moisture-sensor), [DHT11](https://arduinogetstarted.com/tutorials/arduino-dht11), and [Arduino automatic irrigation system](https://arduinogetstarted.com/tutorials/arduino-automatic-irrigation-system) by [ArduinoGetStarted](https://arduinogetstarted.com/).
+
 
 **Arduino to breadboard:**
 
