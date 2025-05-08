@@ -11,6 +11,7 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
 ## Physical Parts
 
 - **Plastic PVC hose (5 mm):** [Puuilo product link](https://www.puuilo.fi/muoviletku-kirkas-5mm#tab-label-description)
+- **Plant pot**: The plant pot has two levels: the top holds the soil and plant, while the lower level contains a plastic hose to drain excess water for reuse during the next watering.
 - **Water pump (3–24V DC):** [Partco product link](https://www.partco.fi/fi/saehkoemekaniikka/moottorit/dc-moottorit/23144-mot-pmma19004a001.html)
 - **USB-C charging cable:** [Partco product link](https://www.partco.fi/fi/raspberry-pi/sbc-tarvikkeet/26632-rpi5-pwrw.html)
 - **Arduino Uno R4 WiFi (ABX00087):** [Partco product link](https://www.partco.fi/fi/arduino/arduino-classic/26323-arduino-uno-r4w.html)
