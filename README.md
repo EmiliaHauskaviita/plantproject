@@ -18,21 +18,21 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
 
 ## Wiring 
 
-**Arduino to Breadboard**
+**Arduino to breadboard:**
 
 - Arduino GND (Ground) to Breadboard blue (-) rail.
   
 - Arduino VCC (5V) to Breadboard red (+) rail. 
 
- **Water Pump:**
+ **Water pump:**
 
 - The pump's negative is connected to the power supply's negative.
   
 - The pump's positive is connected to the relay's NO (Normally Open) terminal.
   
 - The power supply's positive is connected to the relay's COM (Common) terminal.
-   
-  **Soil Moisture Sensor:**
+
+**Soil moisture sensor:**
 
 - Sensor VCC to Arduino 3.3V VCC (power).
   
@@ -40,7 +40,7 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
   
 - Sensor OUT to Arduino ANALOG IN Pin A0 (The sensor responds through OUT pin, delivering the measured values).
    
-**DHT11 Sensor:**
+**DHT11 sensor:**
 
 - The DHT11 sensor is connected to breadboard pins i11–i14:
   
@@ -51,6 +51,8 @@ Made for Haaga-Helia [ICT Infrastructure project - ICI008AS3A-3002 (10 credits)]
    - I13 = NC (Not Connected, we don't need this pin).
      
    - I14 = GND (Ground).
+
+ **Breadboard connections:**
      
 - Breadboard B12(VCC) is connected to the breadboard section where VCC from the Arduino is connected.
   
