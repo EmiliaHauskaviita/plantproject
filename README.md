@@ -45,7 +45,7 @@ The wiring is based on [Arduino soil moisture sensor](https://arduinogetstarted.
    
 **DHT11 sensor:**
 
-- The DHT11 sensor is connected to breadboard pins i11–i14:
+- The DHT11 sensor is connected to breadboard pins I11–I14:
   
    - I11 = VCC (Power).
      
@@ -59,7 +59,7 @@ The wiring is based on [Arduino soil moisture sensor](https://arduinogetstarted.
      
 - Breadboard B12(VCC) is connected to the breadboard section where VCC from the Arduino is connected.
   
-- Breadboard C12 (OUT) is connected to f11 (VCC). Note! This is correct only if a pull-up resistor is used for the OUT signal.
+- Breadboard C12 (OUT) is connected to F11 (VCC). Note! This is correct only if a pull-up resistor is used for the OUT signal.
   
 - Breadboard H12 (OUT) is directly connected to Arduino Digital Pin 2.
   
